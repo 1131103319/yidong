@@ -1,0 +1,116 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:excel-analysis >---------------------
+[INFO] Building excel-analysis 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.7.13:run (default-cli) > test-compile @ excel-analysis >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ excel-analysis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:compile (default-compile) @ excel-analysis ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ excel-analysis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /Users/wohaocai/vscode/yidong/backend/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:testCompile (default-testCompile) @ excel-analysis ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.7.13:run (default-cli) < test-compile @ excel-analysis <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.7.13:run (default-cli) @ excel-analysis ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.13)
+
+2025-03-27 02:19:37.594 [main] INFO  c.e.e.ExcelAnalysisApplication - Starting ExcelAnalysisApplication using Java 1.8.0_431 on MacBook-Pro with PID 65926 (/Users/wohaocai/vscode/yidong/backend/target/classes started by wohaocai in /Users/wohaocai/vscode/yidong/backend)
+2025-03-27 02:19:37.597 [main] DEBUG c.e.e.ExcelAnalysisApplication - Running with Spring Boot v2.7.13, Spring v5.3.28
+2025-03-27 02:19:37.597 [main] INFO  c.e.e.ExcelAnalysisApplication - The following 1 profile is active: "dev"
+2025-03-27 02:19:38.315 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27 02:19:38.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2025-03-27 02:19:38.952 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-27 02:19:38.960 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-27 02:19:38.963 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 02:19:38.963 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2025-03-27 02:19:39.116 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 02:19:39.116 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1440 ms
+2025-03-27 02:19:39.216 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 02:19:39.425 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 02:19:39.506 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO source_data ( business_type, time, received_data_count, received_file_count, phone_null_count, domain_null_count, dest_ip_null_count, dest_port_null_count, source_ip_null_count, source_port_null_count, created_at ) VALUES ('24IOT_4GLog_2B', '2024-01-01 00:00:00', 800, 8, 40, 30, 20, 15, 25, 10, NOW()), ('24IOT_4GLog_2B', '2024-01-02 00:00:00', 1200, 12, 60, 45, 30, 25, 35, 15, NOW()), ('24IOT_4GLog_2B', '2024-01-03 00:00:00', 1000, 10, 50, 40, 25, 20, 30, 12, NOW()), ('4G_4GLog_2B', '2024-01-01 00:00:00', 2000, 20, 100, 80, 60, 40, 50, 30, NOW()), ('4G_4GLog_2B', '2024-01-02 00:00:00', 2500, 25, 125, 100, 75, 50, 60, 35, NOW()), ('4G_4GLog_2B', '2024-01-03 00:00:00', 1800, 18, 90, 70, 54, 36, 45, 27, NOW()), ('NB_4GLog_2B', '2024-01-01 00:00:00', 1500, 15, 75, 60, 45, 30, 40, 20, NOW()), ('NB_4GLog_2B', '2024-01-02 00:00:00', 1800, 18, 90, 72, 54, 36, 45, 25, NOW()), ('NB_4GLog_2B', '2024-01-03 00:00:00', 1600, 16, 80, 64, 48, 32, 40, 22, NOW()), ('2G_4GLog_2B', '2024-01-01 00:00:00', 500, 5, 25, 20, 15, 10, 12, 8, NOW()), ('2G_4GLog_2B', '2024-01-02 00:00:00', 600, 6, 30, 24, 18, 12, 15, 9, NOW()), ('2G_4GLog_2B', '2024-01-03 00:00:00', 550, 5, 28, 22, 16, 11, 14, 8, NOW()), ('5G_4GLog_2B', '2024-01-01 00:00:00', 3000, 30, 150, 120, 90, 60, 75, 45, NOW()), ('5G_4GLog_2B', '2024-01-02 00:00:00', 3500, 35, 175, 140, 105, 70, 85, 50, NOW()), ('5G_4GLog_2B', '2024-01-03 00:00:00', 3200, 32, 160, 128, 96, 64, 80, 48, NOW()); nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'created_at' in 'field list'
+2025-03-27 02:19:39.506 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 02:19:39.512 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 02:19:39.515 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-27 02:19:39.527 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-27 02:19:39.557 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO source_data ( business_type, time, received_data_count, received_file_count, phone_null_count, domain_null_count, dest_ip_null_count, dest_port_null_count, source_ip_null_count, source_port_null_count, created_at ) VALUES ('24IOT_4GLog_2B', '2024-01-01 00:00:00', 800, 8, 40, 30, 20, 15, 25, 10, NOW()), ('24IOT_4GLog_2B', '2024-01-02 00:00:00', 1200, 12, 60, 45, 30, 25, 35, 15, NOW()), ('24IOT_4GLog_2B', '2024-01-03 00:00:00', 1000, 10, 50, 40, 25, 20, 30, 12, NOW()), ('4G_4GLog_2B', '2024-01-01 00:00:00', 2000, 20, 100, 80, 60, 40, 50, 30, NOW()), ('4G_4GLog_2B', '2024-01-02 00:00:00', 2500, 25, 125, 100, 75, 50, 60, 35, NOW()), ('4G_4GLog_2B', '2024-01-03 00:00:00', 1800, 18, 90, 70, 54, 36, 45, 27, NOW()), ('NB_4GLog_2B', '2024-01-01 00:00:00', 1500, 15, 75, 60, 45, 30, 40, 20, NOW()), ('NB_4GLog_2B', '2024-01-02 00:00:00', 1800, 18, 90, 72, 54, 36, 45, 25, NOW()), ('NB_4GLog_2B', '2024-01-03 00:00:00', 1600, 16, 80, 64, 48, 32, 40, 22, NOW()), ('2G_4GLog_2B', '2024-01-01 00:00:00', 500, 5, 25, 20, 15, 10, 12, 8, NOW()), ('2G_4GLog_2B', '2024-01-02 00:00:00', 600, 6, 30, 24, 18, 12, 15, 9, NOW()), ('2G_4GLog_2B', '2024-01-03 00:00:00', 550, 5, 28, 22, 16, 11, 14, 8, NOW()), ('5G_4GLog_2B', '2024-01-01 00:00:00', 3000, 30, 150, 120, 90, 60, 75, 45, NOW()), ('5G_4GLog_2B', '2024-01-02 00:00:00', 3500, 35, 175, 140, 105, 70, 85, 50, NOW()), ('5G_4GLog_2B', '2024-01-03 00:00:00', 3200, 32, 160, 128, 96, 64, 80, 48, NOW()); nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'created_at' in 'field list'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.excelanalysis.ExcelAnalysisApplication.main(ExcelAnalysisApplication.java:10)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO source_data ( business_type, time, received_data_count, received_file_count, phone_null_count, domain_null_count, dest_ip_null_count, dest_port_null_count, source_ip_null_count, source_port_null_count, created_at ) VALUES ('24IOT_4GLog_2B', '2024-01-01 00:00:00', 800, 8, 40, 30, 20, 15, 25, 10, NOW()), ('24IOT_4GLog_2B', '2024-01-02 00:00:00', 1200, 12, 60, 45, 30, 25, 35, 15, NOW()), ('24IOT_4GLog_2B', '2024-01-03 00:00:00', 1000, 10, 50, 40, 25, 20, 30, 12, NOW()), ('4G_4GLog_2B', '2024-01-01 00:00:00', 2000, 20, 100, 80, 60, 40, 50, 30, NOW()), ('4G_4GLog_2B', '2024-01-02 00:00:00', 2500, 25, 125, 100, 75, 50, 60, 35, NOW()), ('4G_4GLog_2B', '2024-01-03 00:00:00', 1800, 18, 90, 70, 54, 36, 45, 27, NOW()), ('NB_4GLog_2B', '2024-01-01 00:00:00', 1500, 15, 75, 60, 45, 30, 40, 20, NOW()), ('NB_4GLog_2B', '2024-01-02 00:00:00', 1800, 18, 90, 72, 54, 36, 45, 25, NOW()), ('NB_4GLog_2B', '2024-01-03 00:00:00', 1600, 16, 80, 64, 48, 32, 40, 22, NOW()), ('2G_4GLog_2B', '2024-01-01 00:00:00', 500, 5, 25, 20, 15, 10, 12, 8, NOW()), ('2G_4GLog_2B', '2024-01-02 00:00:00', 600, 6, 30, 24, 18, 12, 15, 9, NOW()), ('2G_4GLog_2B', '2024-01-03 00:00:00', 550, 5, 28, 22, 16, 11, 14, 8, NOW()), ('5G_4GLog_2B', '2024-01-01 00:00:00', 3000, 30, 150, 120, 90, 60, 75, 45, NOW()), ('5G_4GLog_2B', '2024-01-02 00:00:00', 3500, 35, 175, 140, 105, 70, 85, 50, NOW()), ('5G_4GLog_2B', '2024-01-03 00:00:00', 3200, 32, 160, 128, 96, 64, 80, 48, NOW()); nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'created_at' in 'field list'
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:101)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'created_at' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.809 s
+[INFO] Finished at: 2025-03-27T02:19:39+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.7.13:run (default-cli) on project excel-analysis: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -1,0 +1,142 @@
+2025-03-27 19:29:55.419 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-27 19:29:55.441 [main] INFO  c.e.e.ExcelAnalysisApplication - Starting ExcelAnalysisApplication v0.0.1-SNAPSHOT using Java 1.8.0_431 on MacBook-Pro with PID 6870 (/Users/wohaocai/vscode/yidong/比对统计系统.jar started by wohaocai in /Users/wohaocai/vscode/yidong)
+2025-03-27 19:29:55.441 [main] DEBUG c.e.e.ExcelAnalysisApplication - Running with Spring Boot v2.7.13, Spring v5.3.28
+2025-03-27 19:29:55.442 [main] INFO  c.e.e.ExcelAnalysisApplication - The following 1 profile is active: "dev"
+2025-03-27 19:29:56.416 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27 19:29:56.500 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2025-03-27 19:29:57.382 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-27 19:29:57.485 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:29:57.489 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 19:29:57.489 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2025-03-27 19:29:57.638 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 19:29:57.639 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2118 ms
+2025-03-27 19:29:57.814 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27 19:29:57.898 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-27 19:29:58.100 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-27 19:29:58.235 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 19:29:58.487 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 19:29:58.513 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-27 19:29:59.376 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-27 19:29:59.391 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27 19:30:00.237 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27 19:30:00.401 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-03-27 19:30:00.653 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:30:00.667 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2025-03-27 19:30:00.670 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27 19:30:00.672 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 19:30:00.689 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 19:30:00.692 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:30:00.692 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-27 19:30:00.697 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:30:00.698 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:30:00.707 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-27 19:30:00.730 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-03-27 19:30:31.146 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-27 19:30:31.167 [main] INFO  c.e.e.ExcelAnalysisApplication - Starting ExcelAnalysisApplication v0.0.1-SNAPSHOT using Java 1.8.0_431 on MacBook-Pro with PID 7312 (/Users/wohaocai/vscode/yidong/比对统计系统.jar started by wohaocai in /Users/wohaocai/vscode/yidong)
+2025-03-27 19:30:31.168 [main] DEBUG c.e.e.ExcelAnalysisApplication - Running with Spring Boot v2.7.13, Spring v5.3.28
+2025-03-27 19:30:31.169 [main] INFO  c.e.e.ExcelAnalysisApplication - The following 1 profile is active: "dev"
+2025-03-27 19:30:32.031 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27 19:30:32.127 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2025-03-27 19:30:32.803 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-27 19:30:32.816 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:30:32.908 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 19:30:32.908 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2025-03-27 19:30:33.144 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 19:30:33.145 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1901 ms
+2025-03-27 19:30:33.336 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27 19:30:33.419 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-27 19:30:33.626 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-27 19:30:33.765 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 19:30:34.013 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 19:30:34.040 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-27 19:30:34.907 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-27 19:30:34.921 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27 19:30:35.633 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27 19:30:35.797 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-03-27 19:30:36.052 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-27 19:30:36.079 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-27 19:30:36.092 [main] INFO  c.e.e.ExcelAnalysisApplication - Started ExcelAnalysisApplication in 5.532 seconds (JVM running for 6.117)
+2025-03-27 19:31:24.537 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 19:31:24.539 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 19:31:24.542 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-27 19:31:24.645 [http-nio-8081-exec-1] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:31:24.648 [http-nio-8081-exec-1] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2025-03-26
+2025-03-27 19:31:24.686 [http-nio-8081-exec-1] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:31:25.141 [http-nio-8081-exec-1] WARN  c.e.e.service.DataComparisonService - 未找到符合条件的数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:31:25.142 [http-nio-8081-exec-1] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 0
+2025-03-27 19:31:36.651 [http-nio-8081-exec-2] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2024-01-01, 网络类型: 4G
+2025-03-27 19:31:36.652 [http-nio-8081-exec-2] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2024-01-01
+2025-03-27 19:31:36.652 [http-nio-8081-exec-2] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2024-01-01, 网络类型: 4G
+2025-03-27 19:31:36.675 [http-nio-8081-exec-2] INFO  c.e.e.service.DataComparisonService - 统计数据获取成功，找到 1 条记录
+2025-03-27 19:31:36.675 [http-nio-8081-exec-2] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 1
+2025-03-27 19:31:51.403 [http-nio-8081-exec-3] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:31:51.403 [http-nio-8081-exec-3] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2025-03-26
+2025-03-27 19:31:51.404 [http-nio-8081-exec-3] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:31:51.413 [http-nio-8081-exec-3] WARN  c.e.e.service.DataComparisonService - 未找到符合条件的数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:31:51.413 [http-nio-8081-exec-3] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 0
+2025-03-27 19:33:33.184 [http-nio-8081-exec-4] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:33:33.184 [http-nio-8081-exec-4] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2025-03-26
+2025-03-27 19:33:33.184 [http-nio-8081-exec-4] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:33:33.192 [http-nio-8081-exec-4] WARN  c.e.e.service.DataComparisonService - 未找到符合条件的数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:33:33.192 [http-nio-8081-exec-4] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 0
+2025-03-27 19:33:57.040 [http-nio-8081-exec-5] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:33:57.041 [http-nio-8081-exec-5] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2025-03-26
+2025-03-27 19:33:57.042 [http-nio-8081-exec-5] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:33:57.054 [http-nio-8081-exec-5] WARN  c.e.e.service.DataComparisonService - 未找到符合条件的数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 19:33:57.055 [http-nio-8081-exec-5] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 0
+2025-03-27 20:03:23.867 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27 20:03:23.873 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-27 20:03:23.890 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-27 20:06:10.937 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-03-27 20:06:10.946 [main] INFO  c.e.e.ExcelAnalysisApplication - Starting ExcelAnalysisApplication v0.0.1-SNAPSHOT using Java 1.8.0_431 on MacBook-Pro with PID 10871 (/Users/wohaocai/vscode/yidong/比对统计系统.jar started by wohaocai in /Users/wohaocai/vscode/yidong)
+2025-03-27 20:06:10.947 [main] DEBUG c.e.e.ExcelAnalysisApplication - Running with Spring Boot v2.7.13, Spring v5.3.28
+2025-03-27 20:06:10.948 [main] INFO  c.e.e.ExcelAnalysisApplication - The following 1 profile is active: "dev"
+2025-03-27 20:06:11.767 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27 20:06:11.851 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-03-27 20:06:12.579 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-27 20:06:12.672 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-27 20:06:12.675 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-27 20:06:12.675 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2025-03-27 20:06:12.823 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-27 20:06:12.823 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1801 ms
+2025-03-27 20:06:12.989 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27 20:06:13.070 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-03-27 20:06:13.315 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-03-27 20:06:13.457 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-27 20:06:13.729 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-27 20:06:13.757 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-03-27 20:06:14.699 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-27 20:06:14.713 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27 20:06:15.460 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27 20:06:15.627 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-03-27 20:06:15.919 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-27 20:06:15.950 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-27 20:06:15.965 [main] INFO  c.e.e.ExcelAnalysisApplication - Started ExcelAnalysisApplication in 5.671 seconds (JVM running for 6.303)
+2025-03-27 20:06:27.084 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27 20:06:27.089 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-27 20:06:27.098 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-03-27 20:06:27.189 [http-nio-8081-exec-1] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 20:06:27.191 [http-nio-8081-exec-1] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2025-03-26
+2025-03-27 20:06:27.212 [http-nio-8081-exec-1] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 20:06:27.598 [http-nio-8081-exec-1] WARN  c.e.e.service.DataComparisonService - 未找到符合条件的数据 - 日期: 2025-03-26, 网络类型: 4G
+2025-03-27 20:06:27.599 [http-nio-8081-exec-1] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 0
+2025-03-27 20:06:36.892 [http-nio-8081-exec-2] INFO  c.e.e.c.DataComparisonController - 接收到统计请求 - 日期: 2024-01-01, 网络类型: 4G
+2025-03-27 20:06:36.892 [http-nio-8081-exec-2] INFO  c.e.e.c.DataComparisonController - 成功解析日期: 2024-01-01
+2025-03-27 20:06:36.893 [http-nio-8081-exec-2] INFO  c.e.e.service.DataComparisonService - 获取统计数据 - 日期: 2024-01-01, 网络类型: 4G
+2025-03-27 20:06:36.924 [http-nio-8081-exec-2] INFO  c.e.e.service.DataComparisonService - 统计数据获取成功，找到 1 条记录
+2025-03-27 20:06:36.925 [http-nio-8081-exec-2] INFO  c.e.e.c.DataComparisonController - 返回数据总数: 1
