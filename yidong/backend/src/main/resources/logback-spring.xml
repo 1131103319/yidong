@@ -13,9 +13,15 @@
     <!-- 文件输出 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/excel-analysis.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_PATH}/excel-analysis.%d{yyyy-MM-dd}.log</fileNamePattern>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 日志文件名格式：按日期和序号 -->
+            <fileNamePattern>${LOG_PATH}/excel-analysis.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- 单个日志文件最大大小 -->
+            <maxFileSize>10MB</maxFileSize>
+            <!-- 保留天数 -->
             <maxHistory>30</maxHistory>
+            <!-- 所有日志文件总大小上限 -->
+            <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
         <encoder>
             <pattern>${LOG_PATTERN}</pattern>

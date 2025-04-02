@@ -8,7 +8,7 @@
         <router-view/>
       </el-main>
       <el-footer>
-        <p>© 2023 比对统计系统</p>
+        <p>© 2025 比对统计系统</p>
       </el-footer>
     </el-container>
   </div>

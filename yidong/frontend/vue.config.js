@@ -7,10 +7,10 @@ module.exports = defineConfig({
   // 确保资源路径正确
   publicPath: './',
   devServer: {
-    port: 8080,
+    port: 12110,
     proxy: {
       '/api': {
-        target: 'http://localhost:8081',
+        target: 'http://localhost:12111',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/api'
