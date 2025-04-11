@@ -1,9 +1,9 @@
 package com.example.excelanalysis.model;
 
 import lombok.Data;
+
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Data
 @Entity
@@ -12,7 +12,8 @@ public class SourceData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+   @Column(name="ip")
+    private String ip;
     @Column(name = "business_type")
     private String businessType;        // 业务类型
     
@@ -47,6 +48,14 @@ public class SourceData {
     private Long sourcePortNullCount; // 源端口空值数量
     
     // 手动添加getter和setter方法
+    public Long getIp() {
+        return receivedDataCount;
+    }
+
+    public void setIp(Long receivedDataCount) {
+        this.receivedDataCount = receivedDataCount;
+    }
+
     public Long getReceivedDataCount() {
         return receivedDataCount;
     }

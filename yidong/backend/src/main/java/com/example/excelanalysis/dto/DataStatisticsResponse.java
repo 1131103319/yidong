@@ -19,7 +19,7 @@ public class DataStatisticsResponse {
     private Map<String, Double> sourcePortNullRates;
     private Map<String, Object> responseMap;  // 新增字段，用于存储前端所需的格式化数据
 
-    // Getters and setters
+
     public Map<String, Object> getResponseMap() {
         return responseMap;
     }

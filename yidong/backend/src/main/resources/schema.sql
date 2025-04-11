@@ -1,6 +1,7 @@
 -- 创建源数据表
 CREATE TABLE IF NOT EXISTS source_data (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    ip VARCHAR(50) NOT NULL,
     business_type VARCHAR(50) NOT NULL,
     network_type VARCHAR(10) CHECK (network_type IN ('4G', '5G')),
     time DATE NOT NULL,
